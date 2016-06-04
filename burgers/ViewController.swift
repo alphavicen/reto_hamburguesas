@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var hamburguesa: UILabel!
-    let burgers = listadoBurgers()
+    let burgers = ColeccionDeHamburguesa()
     
     @IBOutlet weak var pais: UILabel!
-    let paises = listadoPaises()
+    let paises = ColeccionDePaises()
     let colores = listadoColores()
     
     
@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dameUnaBurger() {
-        hamburguesa.text = burgers.regresaHamburguesa()
-        pais.text = paises.regresaPais()
+        hamburguesa.text = burgers.obtenHamburguesa()
+        pais.text = paises.obtenPais()
         let colorAleatorio = colores.regresaColorAleatorio()
         view.backgroundColor = colorAleatorio
         view.tintColor = colorAleatorio

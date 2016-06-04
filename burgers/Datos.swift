@@ -9,19 +9,19 @@
 import Foundation
 import UIKit
 
-struct listadoBurgers {
+class ColeccionDeHamburguesa {
     let hamburguesas = ["Whopper","Big Mac","Big King","Cuarto de Libra","Long Chicken","McPollo","Doble Cheese","McRoyal","Doble Cheese Bacon","McRib","Big King XXL","Whopper XXL","Whopper JR","Doble Cheese BBQ","Burger Pampa","Burger Ranchera","Burger Piamontesa","Burger Hawai","Burger Sausages","Burger Canaria"]
 
-func regresaHamburguesa() ->String{
+func obtenHamburguesa() ->String{
     let posicion = Int(arc4random()) % hamburguesas.count
     return hamburguesas[posicion]
 }
 }
 
-struct listadoPaises {
+class ColeccionDePaises {
     let paises = ["España","Francia","Portugal","Andorra","Inglaterra","Irlanda","Gales","Escocia","Italia","Holanda","Alemania","Bélgica","Suiza","Suecia","Noruega","Finlandia","Dinamarca","Polonia","Rusia","EEUU"]
 
-func regresaPais() ->String{
+func obtenPais() ->String{
     let posicion = Int(arc4random()) % paises.count
     return paises[posicion]
 }
